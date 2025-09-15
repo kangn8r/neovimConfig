@@ -16,5 +16,6 @@ return {
 		lspconf.jdtls.setup{
 			capabilities = lsp_capabilities
 		}
+
 	end,
 }
