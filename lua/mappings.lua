@@ -12,6 +12,8 @@ map("n", "<C-k>", "<C-w>k", { desc = "switch window up" })
 map("n", "<leader>/", "gcc", { desc = "toggle comment", remap = true })
 map("v", "<leader>/", "gc", { desc = "toggle comment", remap = true })
 
+map("t", "<Esc>", "<C-\\><C-n>", { remap = false })
+
 -- Telescope
 local builtin = require('telescope.builtin')
 map('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
@@ -29,3 +31,8 @@ map('n', '<tab>', '<Cmd>BufferNext<CR>', opts)
 map('n', '<Leader><tab>',   '<Cmd>BufferPick<CR>', opts)
 map('n', '<Leader>x', '<Cmd>BufferClose<CR>', opts)
 map('n', '<Leader>X', '<Cmd>BufferCloseAllButCurrent<CR>', opts)
+
+-- ToggleTerm
+map('n', '<Leader>tt', '<Cmd>ToggleTermToggleAll<CR>', {desc = "Toggle Terminal Windows"} )
+map('n', '<Leader>th', '<Cmd>ToggleTerm direction=horizontal size=20<CR>', {desc = "Horizontal Terminal"} )
+map('n', '<Leader>tv', '<Cmd>ToggleTerm direction=vertical size=50<CR>', {desc = "Vertical Terminal"})

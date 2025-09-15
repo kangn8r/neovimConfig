@@ -5,3 +5,6 @@ vim.g.mapleader = "<Space>"
 
 require("config.lazy")
 require("mappings")
+
+require("toggleterm").setup{}
+

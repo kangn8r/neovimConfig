@@ -1,7 +1,9 @@
 return {
 	"neovim/nvim-lspconfig",
 	config = function()
-		local servers = { "html", "cssls", "jdtls", "rust_analyzer", "pylsp", "pyrefly", "clangd", "yaml_language_server", "nil_ls", "lua_ls"  }
-		vim.lsp.enable(servers)
+		local lspconf = require("lspconfig")
+		lspconf.lua_ls.setup{}
+		lspconf.hyprls.setup{}
+		lspconf.pylsp.setup{}
 	end,
 }
