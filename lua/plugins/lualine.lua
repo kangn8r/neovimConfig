@@ -6,10 +6,10 @@ return {
 		sections = {
         lualine_a = {'mode'},
         lualine_b = {'branch'},
-        lualine_c = {'filename', "diagnostics", sources = {"nvim_diagnostic"}},
+        lualine_c = {'filename',},
         lualine_x = {'lsp_status', 'filetype'},
         lualine_z = {'location'}
     },
-
+ -- {"diagnostics", sources = {"lsp_diagnostic", "cmp"}}
 	}
 }
