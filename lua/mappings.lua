@@ -18,3 +18,8 @@ map('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
 -- Neo Tree
 map("n", "<C-n>", ":Neotree toggle<CR>")
+
+
+-- BarBar
+map('n', '<S-tab>', '<Cmd>BufferPrevious<CR>', opts)
+map('n', '<tab>', '<Cmd>BufferNext<CR>', opts)
