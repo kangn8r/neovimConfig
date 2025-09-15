@@ -5,5 +5,6 @@ return {
 		lspconf.lua_ls.setup{}
 		lspconf.hyprls.setup{}
 		lspconf.pylsp.setup{}
+		lspconf.jdtls.setup{}
 	end,
 }
