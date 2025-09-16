@@ -11,6 +11,14 @@ require("toggleterm").setup{}
 --Snippets Setup
 require("luasnip.loaders.from_vscode").lazy_load()
 
+-- Ghost Text
+vim.diagnostic.config({
+	virtual_text = true,
+	float = {
+		source = "always"
+	}
+})
+
 --Autocompletion
 local cmp = require("cmp")
 local luasnip = require("luasnip")

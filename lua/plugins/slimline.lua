@@ -6,6 +6,6 @@ return {
 				left = {"mode", "path", "git", "diagnostics"},
 				center = {"recording", "searchcount"},
 				right = {"filetype_lsp", "progress"},
-			}
+			},
 		}
 }
