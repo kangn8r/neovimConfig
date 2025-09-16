@@ -39,6 +39,7 @@ map('n', '<Leader>tv', '<Cmd>ToggleTerm direction=vertical size=50<CR>', {desc =
 
 
 -- CMP stuff
+
 vim.api.nvim_create_autocmd('LspAttach', {
   desc = 'LSP actions',
   callback = function()
