@@ -4,7 +4,7 @@ return {
   priority = 1000,
   ---@type solarized.config
   opts = {
-		variant = "summer"
+		variant = "winter"
 	},
   config = function(_, opts)
     vim.o.termguicolors = true
